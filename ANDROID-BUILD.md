@@ -2,7 +2,7 @@
 
 Этот документ объясняет `.github/workflows/android-build.yml` — CI-пайплайн,
 который на GitHub-сервере (не на вашем компьютере) собирает `.apk` из
-Capacitor-проекта каждый раз, когда вы делаете `git push` в ветку `main`.
+Capacitor-проекта каждый раз, когда вы делаете `git push` в ветку `master`.
 
 ## 0. Что такое GitHub Actions вообще
 
@@ -25,13 +25,13 @@ name: Android Build
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch: {}
 ```
 
 - `name` — просто отображаемое имя, видно во вкладке Actions.
-- `on.push.branches: [main]` — правило запуска: **каждый раз**, когда в ветку
-  `main` попадает новый коммит (обычный push или merge), GitHub автоматически
+- `on.push.branches: [master]` — правило запуска: **каждый раз**, когда в ветку
+  `master` попадает новый коммит (обычный push или merge), GitHub автоматически
   стартует этот workflow. Пуш в другие ветки его не триггерит.
 - `on.workflow_dispatch: {}` — добавляет кнопку **"Run workflow"** во вкладке
   Actions, чтобы запустить пайплайн вручную, без нового коммита (например,
