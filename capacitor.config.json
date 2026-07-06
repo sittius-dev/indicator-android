@@ -1,0 +1,12 @@
+{
+  "appId": "dev.groov.whalewatch",
+  "appName": "Whale Watch",
+  "webDir": "www",
+  "backgroundColor": "#0d0d0d",
+  "ios": {
+    "contentInset": "always"
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

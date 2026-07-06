@@ -1,0 +1,19 @@
+{
+  "name": "whale-watch-app",
+  "version": "0.3.6",
+  "description": "Capacitor shell for the Whale Watch MM-campaign detector. www/index.html is a committed copy of the web app (source repo: indicator-html) — update it manually, then run npm run sync.",
+  "private": true,
+  "scripts": {
+    "sync": "npx cap sync",
+    "sync:android": "npx cap sync android",
+    "sync:ios": "npx cap sync ios",
+    "open:android": "npx cap open android",
+    "open:ios": "npx cap open ios"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.4.1",
+    "@capacitor/cli": "^8.4.1",
+    "@capacitor/core": "^8.4.1",
+    "@capacitor/ios": "^8.4.1"
+  }
+}
